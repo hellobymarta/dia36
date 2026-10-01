@@ -6,6 +6,9 @@ salidas, se añaden, se corrigen y se retiran.
 
 **Next.js 16 (App Router) + React 19 + Tailwind CSS 4 + Mongoose 9.**
 
+- En funcionamiento: https://dia36-kappa.vercel.app
+- Repositorio: https://github.com/hellobymarta/dia36
+
 ## Cómo ejecutarlo
 
 ```bash
@@ -153,8 +156,9 @@ devuelve como 400, no como error del servidor.
 
 ### El despliegue
 
-En Vercel, con el repositorio de GitHub conectado. La variable `MONGODB_URI` se
-configura ahí (*Settings → Environment Variables*), nunca en el repositorio.
+Está en https://dia36-kappa.vercel.app, con el repositorio de GitHub conectado:
+cada push a `main` lo vuelve a desplegar. La variable `MONGODB_URI` se configura
+ahí (*Settings → Environment Variables*), nunca en el repositorio.
 Vercel lee las variables al construir, así que después de añadirla o cambiarla
 hay que volver a desplegar.
 
