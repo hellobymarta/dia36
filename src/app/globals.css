@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&family=Montserrat:wght@400;500&display=swap");
+@import "tailwindcss";
+
+/* Los mismos tokens que la web de Vagamundo de la PEC4: el crema de fondo, la
+   tinta de los textos, Playfair para los titulares e Inter para el texto. */
+@theme {
+  --color-crema: #efebe6;
+  --color-hueso: #f6f3ef;
+  --color-tinta: #191512;
+  --color-suave: #7d746c;
+  --color-borde: #ddd6cd;
+  --color-acento: #a2603a;
+
+  --font-titulo: "Playfair Display", Georgia, serif;
+  --font-texto: "Inter", system-ui, sans-serif;
+  --font-etiqueta: "Montserrat", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-crema);
+  color: var(--color-tinta);
+  font-family: var(--font-texto);
+  font-weight: 300;
+}
+
+.titular {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.etiqueta {
+  font-family: var(--font-etiqueta);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-suave);
+}
